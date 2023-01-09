@@ -1,0 +1,38 @@
+body {
+    background-image: url(../img/hatter.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "aside article"
+    "footer footer"
+    ;
+    width: 70%;
+    margin: 0 auto;
+}
+header {
+    grid-area: header;
+}
+article {
+    grid-area: article;
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
+}
+nav {
+    grid-area: nav;
+}
+aside > img {
+    width: 100%;
+}
+header, article, aside, footer, nav {
+    background-color: azure;
+}
