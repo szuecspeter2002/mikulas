@@ -17,6 +17,9 @@ body {
 }
 header {
     grid-area: header;
+    background-image: url(../img/fejlec.jpg);
+    background-size: cover;
+    height: 80vh;
 }
 article {
     grid-area: article;
@@ -33,6 +36,25 @@ nav {
 aside > img {
     width: 100%;
 }
-header, article, aside, footer, nav {
+header, article, aside {
     background-color: azure;
+}
+nav, footer {
+    background-color: darkred;
+}
+li a {
+    color: white;
+    text-decoration: none;
+}
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+header > h1 {
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-top: 5vh;
 }
